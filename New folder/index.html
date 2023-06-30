@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator</title>
+    <script src="https://kit.fontawesome.com/514644d00e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@0;1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <form action="" id="passwordgenertorform">
+        <div class="container">
+            <header>
+                <h1>Password Generator</h1><br>
+            </header>
+            <main id="main">
+                <div class="result">
+                    <span id="input"></span>
+                    <button id="copy" class="copybtn"><i class="far fa-clipboard"></i></button>
+                </div>
+                <div class="description">
+                    <div class="left-description">
+                        <div class="first">
+                            <span>Password Length</span>
+                            <input type="number" name="number" id="length" max="25" min="8" style="width:60px;"></div>
+                        <div class="first"> <span>Include Uppercase Letters</span>
+                            <input type="checkbox" name="line2" id="uppercase" checked></div>
+                        <div class="first"><span>Include Lowercase Letters</span>
+                            <input type="checkbox" name="line3" id="lowercase" checked>
+                        </div>
+                        <div class="first"><span>Include Numbers</span>
+                            <input type="checkbox" name="line4" id="numbers" checked>
+                        </div>
+                        <div class="first"><span>Include Symbols</span>
+                            <input type="checkbox" name="line5" id="symbols" checked>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <div class="btng">
+                <button class="btn" id="btn">Generate Password</button>
+            </div>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
